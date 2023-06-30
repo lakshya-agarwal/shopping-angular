@@ -1,0 +1,10 @@
+<mat-expansion-panel >
+    <mat-expansion-panel-header>
+        <mat-panel-title> CATEGORIES</mat-panel-title>
+        <mat-selection-list>
+            <mat-list-option *ngfor="let category of l" [value]='category'>
+            <button>{{category}}</button>    
+            </mat-list-option>
+        </mat-selection-list>
+    </mat-expansion-panel-header>
+</mat-expansion-panel>

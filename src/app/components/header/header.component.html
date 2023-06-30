@@ -1,0 +1,45 @@
+
+    <mat-toolbar class="max-w-7xl mx-auto boder-x justify-between">
+        <a routerLinks="home">Store</a>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon [matBadge]="1">shopping_cart</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <div class="p-3 divide-y divide-solid">
+                <div class="pb-3 justify-between flex">
+                    <span class="mr-16">Items</span>
+                    <a routerLink="cart">View Cart</a>
+                </div>
+                
+                <div class="py-3 ">
+                    <div class="justify-between flex font-light mb-2">
+                        Keyboard x1
+                        <span class="font-bold">{{'150' | currency}}</span>
+                    </div>
+                    <div class="justify-between flex font-light mb-2">
+                        Mouse x1
+                        <span class="font-bold">{{'150' | currency}}</span>
+                    </div>
+                    <div class="justify-between flex font-light mb-2">
+                        Desktop x1
+                        <span class="font-bold">{{'150' | currency}}</span>
+                    </div>
+                </div>
+                <div class="justify-between flex py-3">
+                    Total:
+                    <span class="font-bold">{{'450' | currency}}</span>
+                </div>
+                <div class="justify-between flex pt-3 ">
+                    <button class="rounded-full bg-red-500 text-white w-9 h-9" >
+                        <mat-icon>remove_shopping_cart</mat-icon>
+                    </button>
+                    <button class="rounded-full bg-green-500 text-white w-9 h-9" >
+                        <mat-icon>shopping_cart</mat-icon>
+                    </button>
+                </div>
+                
+            </div>
+        </mat-menu>
+        
+    </mat-toolbar>
+
