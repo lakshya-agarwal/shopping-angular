@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import { Product } from 'src/app/models/productmodel';
-import EventEmitter = require('events');
 
 @Component({
   selector: 'app-product-box',
